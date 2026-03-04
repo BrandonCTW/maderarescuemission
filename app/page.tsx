@@ -271,7 +271,37 @@ export default function HomePage() {
             <h2 className="text-3xl font-bold mb-4" style={{ color: "#2E3192" }}>Life at the Mission</h2>
             <p className="text-gray-600">See our community in action.</p>
           </div>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
+
+          {/* Desktop: featured layout */}
+          <div className="hidden md:flex gap-3" style={{ height: "420px" }}>
+            <div className="relative overflow-hidden rounded-lg" style={{ flex: "2" }}>
+              <Image
+                src="/assets/gallery/gallery_01_1000004823.jpg"
+                alt="Madera Rescue Mission groundbreaking ceremony"
+                fill
+                className="object-cover hover:scale-105 transition-transform duration-500"
+              />
+            </div>
+            <div className="flex flex-col gap-3" style={{ flex: "1" }}>
+              {[
+                "gallery_02_20231214_074827.jpg",
+                "gallery_04_20231204_145727.jpg",
+                "gallery_07_1000004757.jpg",
+              ].map((img) => (
+                <div key={img} className="relative overflow-hidden rounded-lg" style={{ flex: "1" }}>
+                  <Image
+                    src={`/assets/gallery/${img}`}
+                    alt="Madera Rescue Mission in action"
+                    fill
+                    className="object-cover hover:scale-105 transition-transform duration-500"
+                  />
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Mobile: 2x2 grid */}
+          <div className="grid grid-cols-2 md:hidden gap-3">
             {[
               "gallery_01_1000004823.jpg",
               "gallery_02_20231214_074827.jpg",
@@ -288,6 +318,7 @@ export default function HomePage() {
               </div>
             ))}
           </div>
+
           <div className="text-center mt-8">
             <Link
               href="/gallery"
