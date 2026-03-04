@@ -36,7 +36,6 @@ export default function Navbar() {
               width={48}
               height={48}
               className="rounded"
-              priority
             />
             <span className="text-white font-bold text-lg leading-tight hidden sm:block">
               Madera Rescue Mission
