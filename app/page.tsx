@@ -116,15 +116,22 @@ export default function HomePage() {
   return (
     <>
       {/* Hero */}
-      <section className="relative h-[540px] overflow-hidden">
+      <section className="relative h-[580px] overflow-hidden">
         <Image
           src="/assets/gallery/homepage_lighthouse.jpg"
           alt="Madera Rescue Mission - A beacon of hope"
           fill
-          className="object-cover"
+          className="object-cover object-center scale-105"
           priority
         />
-        <div className="absolute inset-0 bg-black/55" />
+        {/* Branded gradient: navy at bottom fades to dark transparent at top */}
+        <div
+          className="absolute inset-0"
+          style={{
+            background:
+              "linear-gradient(to top, rgba(46,49,146,0.97) 0%, rgba(20,25,100,0.75) 35%, rgba(0,0,0,0.35) 70%, rgba(0,0,0,0.15) 100%)",
+          }}
+        />
         <div className="relative z-10 flex flex-col items-center justify-center h-full text-center px-4">
           <h1 className="text-white text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-4 drop-shadow-lg">
             Serving the Least, the Last,<br className="hidden sm:block" /> and the Lost
@@ -138,18 +145,31 @@ export default function HomePage() {
               target="_blank"
               rel="noopener noreferrer"
               style={{ backgroundColor: "#8B1A1A" }}
-              className="text-white px-8 py-3 rounded font-bold text-lg hover:opacity-90 transition-opacity"
+              className="text-white px-8 py-3 rounded font-bold text-lg hover:opacity-90 transition-opacity shadow-lg"
             >
               Donate Now
             </a>
             <Link
               href="/services"
-              style={{ borderColor: "white" }}
-              className="text-white border-2 px-8 py-3 rounded font-bold text-lg hover:bg-white hover:text-blue-900 transition-colors"
+              style={{ borderColor: "rgba(255,255,255,0.8)" }}
+              className="text-white border-2 px-8 py-3 rounded font-bold text-lg hover:bg-white hover:text-blue-900 transition-colors shadow-lg backdrop-blur-sm"
             >
               Our Services
             </Link>
           </div>
+        </div>
+        {/* Scroll indicator */}
+        <div className="absolute bottom-6 left-1/2 -translate-x-1/2 z-10 flex flex-col items-center gap-1 opacity-70">
+          <span className="text-white text-xs uppercase tracking-widest">Scroll</span>
+          <svg
+            className="w-5 h-5 text-white animate-bounce"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth={2.5}
+            viewBox="0 0 24 24"
+          >
+            <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
+          </svg>
         </div>
       </section>
 
