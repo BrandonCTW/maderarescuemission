@@ -13,6 +13,15 @@
     "react": "19.2.3",
     "react-dom": "19.2.3"
   },
+  "browserslist": [
+    "chrome >= 92",
+    "edge >= 92",
+    "firefox >= 90",
+    "safari >= 15.4",
+    "ios_saf >= 15.4",
+    "samsung >= 16",
+    "not dead"
+  ],
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
     "@types/node": "^20",
