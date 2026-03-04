@@ -5,12 +5,12 @@ export const metadata = {
 };
 
 const impactItems = [
-  { amount: "$25", description: "Provides a warm bed and meals for one guest for a night" },
-  { amount: "$75", description: "Stocks the pantry with enough food to feed 10 guests" },
-  { amount: "$250", description: "Covers one month of supplies for a discipleship program participant" },
-  { amount: "$500", description: "Funds a week of case management and connection ministry services" },
-  { amount: "$1,000", description: "Supports a month of behavioral health housing for one client" },
-  { amount: "Custom", description: "Every dollar goes directly to serving Madera County's most vulnerable" },
+  { amount: "$25", description: "A warm bed and meals for one guest for a night - the whole thing" },
+  { amount: "$75", description: "Enough pantry stock to feed ten guests a hot meal" },
+  { amount: "$250", description: "One month of supplies for a discipleship program resident" },
+  { amount: "$500", description: "A week of case management - the appointments, paperwork, and follow-up that actually move people forward" },
+  { amount: "$1,000", description: "A month of behavioral health housing for one client, including weekly case management" },
+  { amount: "Custom", description: "38 years of mission. Every dollar goes directly to the people who need it most in Madera County" },
 ];
 
 export default function DonatePage() {
@@ -21,7 +21,7 @@ export default function DonatePage() {
         <div className="max-w-4xl mx-auto px-4">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">Make a Difference Today</h1>
           <p className="text-blue-200 text-lg max-w-2xl mx-auto">
-            Your generosity provides emergency shelter, hot meals, and life-transforming programs for Madera County's most vulnerable neighbors.
+            Ninety-four people will sleep at the Mission tonight. Your gift is what keeps that door open - and what funds the programs that help them not need it again.
           </p>
         </div>
       </section>
@@ -31,7 +31,7 @@ export default function DonatePage() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-2xl font-bold mb-4" style={{ color: "#2E3192" }}>Give Now</h2>
           <p className="text-gray-600 mb-8 max-w-xl mx-auto">
-            Madera Rescue Mission accepts secure online donations through Network for Good and PayPal.
+            The Mission is a 501(c)(3) nonprofit. Giving online takes about two minutes - secure and tax-deductible.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
@@ -83,14 +83,14 @@ export default function DonatePage() {
               <div className="text-3xl mb-3">📦</div>
               <h3 className="font-bold mb-2">Donate Supplies</h3>
               <p className="text-gray-600 text-sm">
-                The Mission accepts in-kind donations of food, clothing, hygiene items, and household goods. Call (559) 675-8321 for current needs.
+                The Mission accepts food, clothing, hygiene items, and household goods. Call (559) 675-8321 first - they can tell you exactly what they need right now.
               </p>
             </div>
             <div className="text-center p-6 border border-gray-100 rounded-lg">
               <div className="text-3xl mb-3">🙌</div>
               <h3 className="font-bold mb-2">Volunteer</h3>
               <p className="text-gray-600 text-sm">
-                Give the gift of time. Contact the Mission at (559) 675-8321 to learn about volunteer opportunities and probation fulfillment.
+                Volunteer opportunities and probation fulfillment both available. Call (559) 675-8321 to find the right fit.
               </p>
             </div>
           </div>

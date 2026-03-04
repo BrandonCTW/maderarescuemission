@@ -30,10 +30,8 @@ const images = [
   { src: "gallery_21_20230927_084423.jpg", alt: "Ministry activity - September 2023" },
   { src: "gallery_22_20231214_121634.jpg", alt: "Ministry activity - December 2023" },
   { src: "gallery_23_20231216_092948.jpg", alt: "Ministry activity - December 2023" },
-  { src: "homepage_lighthouse.jpg", alt: "Lighthouse - symbol of hope and guidance" },
   { src: "homepage_20230329.jpg", alt: "Ministry photo - March 2023" },
   { src: "homepage_20230327.jpg", alt: "Ministry photo - March 2023" },
-  { src: "blog_pexels_lighthouse.jpg", alt: "Lighthouse image" },
 ];
 
 export default function GalleryPage() {
@@ -44,7 +42,7 @@ export default function GalleryPage() {
         <div className="max-w-4xl mx-auto px-4">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">Gallery</h1>
           <p className="text-blue-200 text-lg max-w-2xl mx-auto">
-            A glimpse into daily life, ministry activities, and community at the Madera Rescue Mission.
+            From the December 2023 Triage Center groundbreaking to daily work on Clinton Street, this is what 147 beds looks like in practice.
           </p>
         </div>
       </section>
@@ -71,9 +69,9 @@ export default function GalleryPage() {
       {/* Social CTA */}
       <section style={{ backgroundColor: "#f5f5f5" }} className="py-12 text-center">
         <div className="max-w-2xl mx-auto px-4">
-          <h2 className="text-2xl font-bold mb-3" style={{ color: "#2E3192" }}>Follow Us on Facebook</h2>
+          <h2 className="text-2xl font-bold mb-3" style={{ color: "#2E3192" }}>Current Photos on Facebook</h2>
           <p className="text-gray-600 mb-6">
-            See more photos and updates from the Mission on our Facebook page.
+            This gallery covers 2023 and 2024. This week&apos;s meals, today&apos;s activities, and recent updates are on Facebook.
           </p>
           <a
             href="https://www.facebook.com/profile.php?id=100072569882694"

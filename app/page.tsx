@@ -162,7 +162,7 @@ export default function HomePage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
       {/* Hero */}
-      <section className="relative h-[580px] overflow-hidden">
+      <section className="relative w-full h-[580px] overflow-hidden">
         <Image
           src="/assets/gallery/homepage_lighthouse.jpg"
           alt="Madera Rescue Mission - A beacon of hope"

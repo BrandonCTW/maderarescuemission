@@ -9,6 +9,15 @@ export const metadata = {
 
 const posts = [
   {
+    slug: "discipleship-program-inside-look",
+    title: "Nine Months, One Floor at a Time - Inside the Discipleship Recovery Program",
+    date: "March 4, 2026",
+    excerpt:
+      "Nobody enrolls in a 9-to-12-month residential program on their first night. The first night, you need a bed. Enrollment in the Discipleship Recovery Program happens later - voluntarily, after the emergency has passed and the question becomes what comes next.",
+    image: "/assets/gallery/gallery_14_20230925_094647.jpg",
+    category: "Program Spotlight",
+  },
+  {
     slug: "triage-center-groundbreaking",
     title: "Triage Center Groundbreaking - A New Chapter for Madera's Homeless Community",
     date: "December 4, 2023",
@@ -23,7 +32,7 @@ const posts = [
     date: "January 5, 2025",
     excerpt:
       "On January 5, 1987, Jesse Chavez opened a small soup kitchen with a big vision: to serve the least, the last, and the lost with radical hospitality. Thirty-eight years later, the Mission continues that calling at a scale none could have imagined.",
-    image: "/assets/gallery/blog_pexels_lighthouse.jpg",
+    image: "/assets/gallery/homepage_20230327.jpg",
     category: "Mission Story",
   },
   {
@@ -54,7 +63,7 @@ export default function BlogPage() {
         <div className="max-w-4xl mx-auto px-4">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">Blog and Stories</h1>
           <p className="text-blue-200 text-lg max-w-2xl mx-auto">
-            Stories of transformation, ministry updates, and reflections from the Madera Rescue Mission.
+            Four decades of work in Madera County - told through the programs, the groundbreakings, and the people who show up every morning.
           </p>
         </div>
       </section>
@@ -107,8 +116,8 @@ export default function BlogPage() {
       {/* Facebook CTA */}
       <section className="py-12 bg-white text-center">
         <div className="max-w-2xl mx-auto px-4">
-          <h2 className="text-2xl font-bold mb-3" style={{ color: "#2E3192" }}>More Stories on Facebook</h2>
-          <p className="text-gray-600 mb-6">Follow the Mission on Facebook for regular updates, photos, and prayer requests.</p>
+          <h2 className="text-2xl font-bold mb-3" style={{ color: "#2E3192" }}>More on Facebook</h2>
+          <p className="text-gray-600 mb-6">The blog covers longer-form stories. Day-to-day updates, photos, and prayer requests move faster on Facebook.</p>
           <a
             href="https://www.facebook.com/profile.php?id=100072569882694"
             target="_blank"

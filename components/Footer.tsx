@@ -17,8 +17,8 @@ export default function Footer() {
                 height={48}
                 className="rounded"
               />
-              <span className="font-bold text-sm leading-tight">
-                Madera Rescue<br />Mission
+              <span className="font-bold text-sm leading-tight whitespace-nowrap">
+                Madera Rescue Mission
               </span>
             </div>
             <p className="text-blue-200 text-sm leading-relaxed">

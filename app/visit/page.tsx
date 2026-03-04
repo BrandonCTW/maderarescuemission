@@ -31,15 +31,32 @@ const faqs = [
   },
 ];
 
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: faqs.map((faq) => ({
+    "@type": "Question",
+    name: faq.q,
+    acceptedAnswer: {
+      "@type": "Answer",
+      text: faq.a,
+    },
+  })),
+};
+
 export default function VisitPage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       {/* Hero */}
       <section style={{ backgroundColor: "#2E3192" }} className="py-16 text-white text-center">
         <div className="max-w-4xl mx-auto px-4">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">Plan a Visit</h1>
           <p className="text-blue-200 text-lg max-w-2xl mx-auto">
-            Whether you need help, want to volunteer, or simply want to see the Mission in action - you are welcome here.
+            The Mission is at 1305 Clinton Street in Madera. Walk-ins are welcome. Office hours run Monday through Saturday, 8am to 4pm, and Sunday, 4pm to 8pm.
           </p>
         </div>
       </section>
@@ -86,20 +103,28 @@ export default function VisitPage() {
         </div>
       </section>
 
-      {/* Map Embed */}
+      {/* Directions */}
       <section className="bg-white">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 pb-16">
-          <div className="rounded-xl overflow-hidden shadow-md border border-gray-200">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3156.5!2d-120.0600!3d36.9614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x809539c0baeed7a1%3A0x4a98c3a4e0cc17ed!2s1305%20Clinton%20St%2C%20Madera%2C%20CA%2093638!5e0!3m2!1sen!2sus!4v1679000000000"
-              width="100%"
-              height="350"
-              style={{ border: 0 }}
-              allowFullScreen
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-              title="Madera Rescue Mission Location"
-            />
+          <div className="rounded-xl border border-gray-200 bg-gray-50 p-8 text-center">
+            <h3 className="text-xl font-bold mb-3" style={{ color: "#2E3192" }}>Getting Here</h3>
+            <p className="text-gray-600 mb-2">1305 Clinton Street, Madera, CA 93638</p>
+            <p className="text-gray-500 text-sm mb-6 max-w-lg mx-auto">
+              Located in central Madera. From Highway 99, take the Avenue 17 exit east, then turn south on Road 28, and east on Clinton Street. The Mission is on the right.
+            </p>
+            <a
+              href="https://maps.google.com/?q=1305+Clinton+Street+Madera+CA+93638"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ backgroundColor: "#2E3192" }}
+              className="text-white px-6 py-3 rounded font-semibold hover:opacity-90 transition-opacity inline-flex items-center gap-2"
+            >
+              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+              </svg>
+              Open in Google Maps
+            </a>
           </div>
         </div>
       </section>
@@ -125,7 +150,7 @@ export default function VisitPage() {
       <section style={{ backgroundColor: "#2E3192" }} className="py-12 text-white text-center">
         <div className="max-w-2xl mx-auto px-4">
           <h2 className="text-2xl font-bold mb-3">Have a Question?</h2>
-          <p className="text-blue-200 mb-6">Reach out and someone from our team will be in touch.</p>
+          <p className="text-blue-200 mb-6">Our staff is small. They respond.</p>
           <a
             href="mailto:jchavez@maderarescue.org"
             style={{ backgroundColor: "#8B1A1A" }}

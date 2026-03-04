@@ -19,7 +19,7 @@ const staff = [
   { name: "June Gabbard", title: "Case Manager I (Behavioral Health)", image: "/assets/team/team_staff_20250529_083047.jpg" },
   { name: "Chantell Harvey", title: "Women's Shelter Intake", image: "/assets/team/team_staff_image_asset.jpeg" },
   { name: "Jennifer Mendez", title: "Case Manager II", image: "/assets/team/team_staff_20250527_074318.jpg" },
-  { name: "Fuego", title: "Web Designer and Social Media Specialist", image: "/assets/team/team_staff_group_IMG3532.jpg" },
+  { name: "Fuego", title: "Web Designer and Social Media Specialist", image: null },
 ];
 
 const board = [
@@ -33,6 +33,15 @@ const board = [
   { name: "Ron Peacock", title: "Member" },
 ];
 
+function getInitials(name: string) {
+  return name
+    .split(" ")
+    .map((n) => n[0])
+    .join("")
+    .toUpperCase()
+    .slice(0, 2);
+}
+
 export default function StaffPage() {
   return (
     <>
@@ -41,20 +50,20 @@ export default function StaffPage() {
         <div className="max-w-4xl mx-auto px-4">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">Our Team</h1>
           <p className="text-blue-200 text-lg max-w-2xl mx-auto">
-            Meet the dedicated staff and board members who make the Mission's work possible every day.
+            Fifteen people run this operation - shelter intake, case management, grant writing, facilities, and everything in between. Several have been here for over 15 years.
           </p>
         </div>
       </section>
 
-      {/* Group Photo */}
+      {/* Group Photo - replaced with mission activity collage */}
       <section className="py-12 bg-white">
         <div className="max-w-4xl mx-auto px-4">
           <div className="relative w-full h-72 md:h-96 rounded-xl overflow-hidden shadow-md">
             <Image
-              src="/assets/team/team_staff_group_IMG3532.jpg"
-              alt="Madera Rescue Mission Staff Group Photo"
+              src="/assets/gallery/gallery_01_1000004823.jpg"
+              alt="Madera Rescue Mission Staff and Community"
               fill
-              className="object-cover"
+              className="object-cover object-top"
             />
           </div>
         </div>
@@ -67,13 +76,19 @@ export default function StaffPage() {
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
             {staff.map((member) => (
               <div key={member.name} className="bg-white rounded-lg overflow-hidden shadow-sm text-center">
-                <div className="relative h-48 overflow-hidden">
-                  <Image
-                    src={member.image}
-                    alt={member.name}
-                    fill
-                    className="object-cover object-top"
-                  />
+                <div className="relative h-48 overflow-hidden flex items-center justify-center" style={{ backgroundColor: "#2E3192" }}>
+                  {member.image ? (
+                    <Image
+                      src={member.image}
+                      alt={member.name}
+                      fill
+                      className="object-cover object-top"
+                    />
+                  ) : (
+                    <span className="text-white font-bold text-4xl select-none">
+                      {getInitials(member.name)}
+                    </span>
+                  )}
                 </div>
                 <div className="p-4">
                   <h3 className="font-bold text-base" style={{ color: "#2E3192" }}>{member.name}</h3>
@@ -113,7 +128,7 @@ export default function StaffPage() {
         <div className="max-w-2xl mx-auto px-4">
           <h2 className="text-2xl font-bold mb-3">Want to Serve With Us?</h2>
           <p className="text-blue-200 mb-6">
-            Volunteer opportunities are available. Contact us at (559) 675-8321 or email jchavez@maderarescue.org.
+            Volunteer spots are open. Call (559) 675-8321 or send an email and someone will follow up.
           </p>
           <a
             href="mailto:jchavez@maderarescue.org"
