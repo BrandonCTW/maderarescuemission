@@ -351,39 +351,96 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Donate CTA */}
-      <section className="py-16 bg-white">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl font-bold mb-4" style={{ color: "#2E3192" }}>
-            Partner With Us
-          </h2>
-          <p className="text-gray-600 text-lg mb-8 max-w-2xl mx-auto">
-            Your generosity makes emergency shelter, discipleship programs, and life-changing services possible for our neighbors in need.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a
-              href="https://www.networkforgood.org/donation/ExpressDonation.aspx?ORGID2=770144133"
-              target="_blank"
-              rel="noopener noreferrer"
-              style={{ backgroundColor: "#8B1A1A" }}
-              className="text-white px-8 py-3 rounded font-bold text-lg hover:opacity-90 transition-opacity"
-            >
-              Donate Now
-            </a>
-            <Link
-              href="/pray"
-              style={{ borderColor: "#2E3192", color: "#2E3192" }}
-              className="border-2 px-8 py-3 rounded font-bold text-lg hover:bg-blue-50 transition-colors"
-            >
-              Pray for the Mission
-            </Link>
-            <Link
-              href="/visit"
-              style={{ borderColor: "#2E3192", color: "#2E3192" }}
-              className="border-2 px-8 py-3 rounded font-bold text-lg hover:bg-blue-50 transition-colors"
-            >
-              Plan a Visit
-            </Link>
+      {/* Ways to Get Involved */}
+      <section className="py-0">
+        <div className="grid grid-cols-1 md:grid-cols-3">
+          {/* Donate */}
+          <div
+            className="relative flex flex-col items-center justify-center text-center px-10 py-16 group overflow-hidden"
+            style={{ backgroundColor: "#8B1A1A" }}
+          >
+            <div
+              className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+              style={{ backgroundColor: "rgba(0,0,0,0.15)" }}
+            />
+            <div className="relative z-10">
+              <div className="w-16 h-16 rounded-full bg-white/15 flex items-center justify-center mx-auto mb-5 group-hover:scale-110 transition-transform duration-300">
+                <svg viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth={1.8} strokeLinecap="round" strokeLinejoin="round" className="w-8 h-8">
+                  <circle cx="12" cy="12" r="10" />
+                  <path d="M12 6v2M12 16v2" />
+                  <path d="M9.5 9.5a2.5 2.5 0 015 0c0 1.5-1.5 2.5-2.5 3s-2.5 1.5-2.5 3a2.5 2.5 0 005 0" />
+                </svg>
+              </div>
+              <h2 className="text-2xl font-bold text-white mb-3">Give Today</h2>
+              <p className="text-red-100 text-sm leading-relaxed mb-6 max-w-xs mx-auto">
+                Your generosity funds emergency shelter, hot meals, and life-changing programs for Madera County's most vulnerable.
+              </p>
+              <a
+                href="https://www.networkforgood.org/donation/ExpressDonation.aspx?ORGID2=770144133"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block bg-white text-red-900 px-7 py-2.5 rounded font-bold text-sm hover:bg-red-50 transition-colors"
+              >
+                Donate Now
+              </a>
+            </div>
+          </div>
+
+          {/* Pray */}
+          <div
+            className="relative flex flex-col items-center justify-center text-center px-10 py-16 group overflow-hidden"
+            style={{ backgroundColor: "#2E3192" }}
+          >
+            <div
+              className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+              style={{ backgroundColor: "rgba(0,0,0,0.15)" }}
+            />
+            <div className="relative z-10">
+              <div className="w-16 h-16 rounded-full bg-white/15 flex items-center justify-center mx-auto mb-5 group-hover:scale-110 transition-transform duration-300">
+                <svg viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth={1.8} strokeLinecap="round" strokeLinejoin="round" className="w-8 h-8">
+                  <path d="M12 2v20M2 12h20" />
+                </svg>
+              </div>
+              <h2 className="text-2xl font-bold text-white mb-3">Pray With Us</h2>
+              <p className="text-blue-200 text-sm leading-relaxed mb-6 max-w-xs mx-auto">
+                Prayer is the foundation of everything we do. Join our community of intercessors lifting up the Mission and the people we serve.
+              </p>
+              <Link
+                href="/pray"
+                className="inline-block bg-white text-blue-900 px-7 py-2.5 rounded font-bold text-sm hover:bg-blue-50 transition-colors"
+              >
+                See Prayer Requests
+              </Link>
+            </div>
+          </div>
+
+          {/* Visit */}
+          <div
+            className="relative flex flex-col items-center justify-center text-center px-10 py-16 group overflow-hidden"
+            style={{ backgroundColor: "#1e2470" }}
+          >
+            <div
+              className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+              style={{ backgroundColor: "rgba(0,0,0,0.15)" }}
+            />
+            <div className="relative z-10">
+              <div className="w-16 h-16 rounded-full bg-white/15 flex items-center justify-center mx-auto mb-5 group-hover:scale-110 transition-transform duration-300">
+                <svg viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth={1.8} strokeLinecap="round" strokeLinejoin="round" className="w-8 h-8">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" />
+                  <circle cx="12" cy="10" r="3" />
+                </svg>
+              </div>
+              <h2 className="text-2xl font-bold text-white mb-3">Plan a Visit</h2>
+              <p className="text-blue-200 text-sm leading-relaxed mb-6 max-w-xs mx-auto">
+                Come see the Mission in person. We welcome volunteers, church groups, and anyone who wants to experience the work firsthand.
+              </p>
+              <Link
+                href="/visit"
+                className="inline-block bg-white text-blue-900 px-7 py-2.5 rounded font-bold text-sm hover:bg-blue-50 transition-colors"
+              >
+                Get Directions
+              </Link>
+            </div>
           </div>
         </div>
       </section>
