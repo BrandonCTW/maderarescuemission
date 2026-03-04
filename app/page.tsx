@@ -170,6 +170,7 @@ export default function HomePage() {
           className="object-cover object-center scale-105"
           priority
           fetchPriority="high"
+          sizes="100vw"
         />
         {/* Branded gradient: navy at bottom fades to dark transparent at top */}
         <div
@@ -347,6 +348,7 @@ export default function HomePage() {
                 alt="Madera Rescue Mission groundbreaking ceremony"
                 fill
                 className="object-cover hover:scale-105 transition-transform duration-500"
+                sizes="(max-width: 768px) 0vw, 66vw"
               />
             </div>
             <div className="flex flex-col gap-3" style={{ flex: "1" }}>
@@ -361,6 +363,7 @@ export default function HomePage() {
                     alt="Madera Rescue Mission in action"
                     fill
                     className="object-cover hover:scale-105 transition-transform duration-500"
+                    sizes="(max-width: 768px) 0vw, 33vw"
                   />
                 </div>
               ))}
@@ -381,6 +384,7 @@ export default function HomePage() {
                   alt="Madera Rescue Mission in action"
                   fill
                   className="object-cover hover:scale-105 transition-transform duration-300"
+                  sizes="50vw"
                 />
               </div>
             ))}
