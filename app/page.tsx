@@ -1,6 +1,48 @@
 import Image from "next/image";
 import Link from "next/link";
 
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": ["ShelterOrganization", "NGO"],
+  name: "Madera Rescue Mission",
+  alternateName: "MRM",
+  url: "https://maderarescuemission.org",
+  logo: "https://maderarescuemission.org/assets/logos/MRM-logo.png",
+  image: "https://maderarescuemission.org/assets/gallery/homepage_lighthouse.jpg",
+  description:
+    "Madera Rescue Mission is a faith-based nonprofit in Madera, CA serving the homeless community since 1987. Emergency shelter, discipleship programs, behavioral health housing, case management, and job training for up to 147 guests nightly.",
+  telephone: "+15596758321",
+  email: "jchavez@maderarescue.org",
+  foundingDate: "1987",
+  taxID: "77-0144133",
+  numberOfEmployees: { "@type": "QuantitativeValue", value: 15 },
+  address: {
+    "@type": "PostalAddress",
+    streetAddress: "1305 Clinton Street",
+    addressLocality: "Madera",
+    addressRegion: "CA",
+    postalCode: "93638",
+    addressCountry: "US",
+  },
+  areaServed: {
+    "@type": "AdministrativeArea",
+    name: "Madera County, CA",
+  },
+  contactPoint: {
+    "@type": "ContactPoint",
+    telephone: "+15596758321",
+    contactType: "customer service",
+    availableLanguage: "English",
+  },
+  sameAs: [
+    "https://www.facebook.com/profile.php?id=100072569882694",
+    "https://www.charitynavigator.org/ein/770144133",
+    "https://greatnonprofits.org/org/madera-rescue-mission-incorporated",
+    "https://www.guidestar.org/profile/77-0144133",
+    "https://www.citygatenetwork.org/organization/madera-rescue-mission/",
+  ],
+};
+
 const stats = [
   { value: "38+", label: "Years Serving Madera" },
   { value: "147", label: "Beds Available Nightly" },
@@ -115,6 +157,10 @@ const process = [
 export default function HomePage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       {/* Hero */}
       <section className="relative h-[580px] overflow-hidden">
         <Image
@@ -123,6 +169,7 @@ export default function HomePage() {
           fill
           className="object-cover object-center scale-105"
           priority
+          fetchPriority="high"
         />
         {/* Branded gradient: navy at bottom fades to dark transparent at top */}
         <div
@@ -194,7 +241,7 @@ export default function HomePage() {
             A Beacon of Hope in Madera County
           </h2>
           <p className="text-gray-600 text-lg leading-relaxed mb-6">
-            Madera Rescue Mission is a Christ-centered nonprofit that has served the homeless community of Madera, CA since 1987. What began as a humble soup kitchen on January 5, 1987 has grown into a 147-bed campus offering emergency shelter, long-term discipleship programs, behavioral health housing, vocational training, and comprehensive case management.
+            What started as a soup kitchen in 1987 has grown into the largest homeless service operation in Madera County - 147 beds, 15 staff, and programs that go well beyond shelter. Emergency intake, discipleship recovery, behavioral health housing, vocational training, case management. The Mission walks with people from the first night to stable footing.
           </p>
           <p className="text-gray-600 text-lg leading-relaxed mb-8 italic border-l-4 pl-6" style={{ borderColor: "#2E3192" }}>
             "We here at the Madera Rescue Mission are always looking at serving our guests, disciples, and the community the best way we can."
