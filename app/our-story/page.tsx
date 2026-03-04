@@ -79,13 +79,13 @@ export default function OurStoryPage() {
                 Christian Rescue Mission - Faith-Based Homeless Services Since 1987
               </h2>
               <p className="text-gray-600 leading-relaxed mb-4">
-                The Madera Rescue Mission was born from a conviction that every person - regardless of circumstance - deserves dignity, hospitality, and hope. Jesse Chavez launched a simple soup kitchen on January 5, 1987 in Madera, CA with a commitment to serving the least, the last, and the lost.
+                Jesse Chavez started with a soup kitchen on January 5, 1987. No building of his own, no staff, no budget to speak of - just a conviction that people experiencing homelessness in Madera deserved more than they were getting.
               </p>
               <p className="text-gray-600 leading-relaxed mb-4">
-                By July 1990, the Mission had grown into a full emergency shelter, formally dedicated to providing beds, meals, showers, and spiritual care. In its inaugural year as a shelter, the Mission served 19,500 meals and provided 12,775 bed stays.
+                By July 1990 that soup kitchen had become a full emergency shelter. The Mission served 19,500 meals and provided 12,775 bed stays in its first year as a shelter - a scale that surprised even the people who built it.
               </p>
               <p className="text-gray-600 leading-relaxed">
-                Today, the Mission operates a 147-bed campus at 1305 Clinton Street, Madera, CA with 15 employees, robust community partnerships, and programs ranging from emergency shelter to long-term discipleship recovery to vocational job training.
+                Today the campus at 1305 Clinton Street holds 147 beds, 15 staff members, and programs that didn&apos;t exist when Chavez started - a 9-12 month discipleship recovery program, a behavioral health housing partnership with Madera County, vocational training, and a tiny homes rapid-rehousing project underway since December 2023.
               </p>
             </div>
             <div className="relative h-80 rounded-xl overflow-hidden shadow-md">

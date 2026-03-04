@@ -7,9 +7,39 @@ export const metadata = {
     "Greg Belmontez and Jose Martinez lead the Working Men's Ministry, equipping men with real trade skills and employment readiness.",
 };
 
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "NewsArticle",
+  headline: "Building Futures - The Working Men's Ministry in Action",
+  description:
+    "Greg Belmontez and Jose Martinez lead the Working Men's Ministry, equipping men with real trade skills and employment readiness.",
+  image: "https://maderarescuemission.org/assets/gallery/gallery_06_20231005_182440.jpg",
+  datePublished: "2023-10-05",
+  dateModified: "2023-10-05",
+  author: {
+    "@type": "Organization",
+    name: "Madera Rescue Mission",
+    url: "https://maderarescuemission.org",
+  },
+  publisher: {
+    "@type": "Organization",
+    name: "Madera Rescue Mission",
+    logo: {
+      "@type": "ImageObject",
+      url: "https://maderarescuemission.org/assets/logos/MRM-logo.png",
+    },
+  },
+  url: "https://maderarescuemission.org/blog/working-mens-ministry-spotlight",
+  mainEntityOfPage: "https://maderarescuemission.org/blog/working-mens-ministry-spotlight",
+};
+
 export default function WorkingMensPost() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <section style={{ backgroundColor: "#2E3192" }} className="py-12 text-white text-center">
         <div className="max-w-4xl mx-auto px-4">
           <span className="text-xs bg-red-800 text-white px-2 py-1 rounded mb-4 inline-block">Program Spotlight</span>
@@ -32,13 +62,19 @@ export default function WorkingMensPost() {
           </div>
 
           <p className="text-gray-600 text-base leading-relaxed mb-6">
-            What happens when men without a home get handed a set of tools and the chance to build something real? Greg Belmontez and Jose Martinez have spent years answering that question through the Working Men&apos;s Ministry at the Madera Rescue Mission.
+            Most people who arrive at the Madera Rescue Mission don&apos;t lack the willingness to work. They lack credentials, contacts, and in many cases the skills that employers can verify. The Working Men&apos;s Ministry is built around that gap.
           </p>
           <p className="text-gray-600 text-base leading-relaxed mb-6">
-            Launched in 2021, the Ministry provides hands-on vocational training in landscaping, painting, flooring, concrete, carpentry, light electrical, plumbing, and facility maintenance. Beyond the trades themselves, participants also learn tool safety, basic mathematics, and workplace communication skills.
+            Launched in 2021 and led by Greg Belmontez and Jose Martinez, the Ministry runs hands-on vocational training in eight trades - landscaping, painting, flooring, concrete, carpentry, light electrical, plumbing, and facility maintenance. Participants also learn tool safety, basic math, and how to communicate in a professional setting. Men leave with real hours in real trades.
           </p>
           <p className="text-gray-600 text-base leading-relaxed mb-6">
-            The result is men who leave the Mission with not just a place to sleep, but a set of skills that can open employment doors. The Ministry reflects the Mission&apos;s core conviction that holistic transformation includes practical readiness for life and work.
+            Belmontez has been at the Mission for over 15 years. He knows the difference between a man who has completed a program and a man who can show up to a job site on day one and be useful. The Ministry trains for the latter.
+          </p>
+          <p className="text-gray-600 text-base leading-relaxed mb-6">
+            The women&apos;s side has a different track for now - volunteers at the Madera Food Bank, building routine and community alongside their time at the Mission. The goal is expanding vocational training to include women.
+          </p>
+          <p className="text-gray-600 text-base leading-relaxed mb-6">
+            A man with a paycheck, a schedule, and a trade is a man who doesn&apos;t need the shelter floor. That&apos;s the point.
           </p>
 
           <div className="grid grid-cols-2 gap-4 my-8">

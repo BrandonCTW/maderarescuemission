@@ -7,9 +7,39 @@ export const metadata = {
     "The Connection Ministry launched in 2022 to help guests navigate documents, agencies, and resources. One year in, the impact is clear.",
 };
 
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "NewsArticle",
+  headline: "One Year of Connection Ministry - Bridging Guests to Resources",
+  description:
+    "The Connection Ministry launched in 2022 to help guests navigate documents, agencies, and resources. One year in, the impact is clear.",
+  image: "https://maderarescuemission.org/assets/gallery/gallery_11_20230926_081504.jpg",
+  datePublished: "2023-09-26",
+  dateModified: "2023-09-26",
+  author: {
+    "@type": "Organization",
+    name: "Madera Rescue Mission",
+    url: "https://maderarescuemission.org",
+  },
+  publisher: {
+    "@type": "Organization",
+    name: "Madera Rescue Mission",
+    logo: {
+      "@type": "ImageObject",
+      url: "https://maderarescuemission.org/assets/logos/MRM-logo.png",
+    },
+  },
+  url: "https://maderarescuemission.org/blog/connection-ministry-one-year",
+  mainEntityOfPage: "https://maderarescuemission.org/blog/connection-ministry-one-year",
+};
+
 export default function ConnectionMinistryPost() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <section style={{ backgroundColor: "#2E3192" }} className="py-12 text-white text-center">
         <div className="max-w-4xl mx-auto px-4">
           <span className="text-xs bg-red-800 text-white px-2 py-1 rounded mb-4 inline-block">Program Spotlight</span>
@@ -32,16 +62,19 @@ export default function ConnectionMinistryPost() {
           </div>
 
           <p className="text-gray-600 text-base leading-relaxed mb-6">
-            When the Connection Ministry launched in 2022, its mission was straightforward but vital: help guests navigate the complicated world of documents, agencies, and resources. One year in, the impact is clear.
+            Most people leaving a shelter don&apos;t know how to get a state ID if they&apos;ve never had a permanent address. They may have a court date, a lapsed benefit, or a medical appointment that nobody has helped them schedule. That&apos;s the gap the Connection Ministry was built to close.
           </p>
           <p className="text-gray-600 text-base leading-relaxed mb-6">
-            Connection Ministry staff work alongside every guest to help them obtain vital documents, work through legal paperwork, and access personal needs. The ministry coordinates directly with the Community Action Partnership of Madera County (CAPMC), Behavioral Health, and the Department of Social Services.
+            Launched in 2022, the Ministry works alongside every guest at the Madera Rescue Mission to tackle the paperwork, agencies, and personal needs that don&apos;t get handled by a warm bed and a hot meal. Staff coordinate directly with CAPMC, Behavioral Health, and the Department of Social Services.
           </p>
           <p className="text-gray-600 text-base leading-relaxed mb-6">
-            One of the Ministry&apos;s most impactful partnerships has been with Camerena Health, coordinating mobile medical services that come directly to the Mission&apos;s campus. The Ministry also handles HMIS data entry - contributing to county-wide tracking of guests served and resources used.
+            One of the Ministry&apos;s most concrete wins has been the mobile medical services partnership with Camerena Health, which brings care directly to the Mission&apos;s campus on Clinton Street. No transit required. No appointment navigation for guests who don&apos;t have a phone. The clinic comes to them.
           </p>
           <p className="text-gray-600 text-base leading-relaxed mb-6">
-            For many guests, the Connection Ministry is the bridge between a first night at the shelter and a path toward stability. That bridge is what makes the difference.
+            The Ministry also manages HMIS data entry - contributing to county-wide tracking of guests served and resources used. Unglamorous work, but it&apos;s what connects the Mission&apos;s individual cases to the larger picture of homelessness response across Madera County.
+          </p>
+          <p className="text-gray-600 text-base leading-relaxed mb-6">
+            For many guests, the Connection Ministry is the first time someone has helped them navigate a system rather than just pointing them toward it. That difference, one case at a time, is what the ministry has built over three years.
           </p>
 
           <div className="mt-10 pt-6 border-t border-gray-100">

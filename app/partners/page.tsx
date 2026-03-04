@@ -35,7 +35,7 @@ export default function PartnersPage() {
         <div className="max-w-4xl mx-auto px-4">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">Community Partners</h1>
           <p className="text-blue-200 text-lg max-w-2xl mx-auto">
-            The Mission could not do what it does without the support of these dedicated community organizations, churches, and civic leaders.
+            Nineteen organizations show up alongside the Mission - county agencies, hospitals, police, churches, and civic groups. Homelessness in Madera County is a shared problem. So is the response.
           </p>
         </div>
       </section>
@@ -71,7 +71,7 @@ export default function PartnersPage() {
         <div className="max-w-2xl mx-auto px-4">
           <h2 className="text-2xl font-bold mb-3">Partner With the Mission</h2>
           <p className="text-blue-200 mb-6">
-            If your organization, church, or business would like to partner with the Madera Rescue Mission, we would love to connect.
+            If your church, agency, or business wants to get involved, the Mission is open to the conversation. Call (559) 675-8321 or send a note.
           </p>
           <a
             href="mailto:jchavez@maderarescue.org"

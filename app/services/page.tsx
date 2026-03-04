@@ -11,7 +11,7 @@ const primaryServices = [
   {
     title: "Emergency Overnight Shelter",
     description:
-      "Every night, the Madera Rescue Mission opens its doors to men, women, and children experiencing homelessness. Guests receive a hot meal, a warm shower, and a safe bed - no questions asked.",
+      "Ninety-four beds open every night for men, women, and children with nowhere to go in Madera County. They arrive at 1305 Clinton Street and receive a hot meal, a shower, and a place to sleep - no appointment, no referral required. Case managers are available for guests who want help connecting to something more permanent.",
     details: [
       "Up to 66 beds for men's overnight guests",
       "Up to 28 beds for women's overnight guests",
@@ -24,7 +24,7 @@ const primaryServices = [
   {
     title: "9-12 Month Discipleship Program",
     description:
-      "For guests ready to pursue lasting change, the Mission offers a voluntary 9-12 month residential Discipleship Recovery Program for both men and women. Rooted in biblical principles, this program combines spiritual formation with practical life skills.",
+      "The overnight shelter is the entry point. This program is voluntary - but for the men and women who enroll, it runs nine to twelve months. Bible teaching, church twice a week, assigned responsibilities, and mentorship from pastors and working professionals. Greg and Lynda Belmontez have led it for more than fifteen years. Graduates can stay on campus an additional six months while they stabilize.",
     details: [
       "Faith-based, Bible-centered recovery and life-transformation",
       "Led by Greg and Lynda Belmontez with volunteer pastors and professionals",
@@ -37,7 +37,7 @@ const primaryServices = [
   {
     title: "Behavioral Health Partnership",
     description:
-      "In partnership with Behavioral Health County of Madera, the Mission provides specialized housing and services for individuals with mental health challenges who are also experiencing homelessness.",
+      "Thirty-four beds are reserved for clients referred through Behavioral Health County of Madera - twenty-three for men, eleven for women. Case managers Travis Shreck and June Gabbard work with each person weekly. The goal is not just stable housing. It is connecting people to the ongoing support that keeps them from losing it again.",
     details: [
       "Up to 23 beds for men's behavioral health clients",
       "Up to 11 beds for women's behavioral health clients",
@@ -54,37 +54,37 @@ const additionalServices = [
     title: "Connection Ministry",
     year: "Est. 2022",
     description:
-      "Assists all guests with documents, legal paperwork, and personal needs. Coordinates with CAPMC, Behavioral Health, Department of Social Services, and mobile medical providers including Camerena Health.",
+      "Getting a state ID sounds straightforward. For someone without a permanent address, a phone, or documentation, it is not. The Connection Ministry handles that logistics work - paperwork, legal documents, medical appointments - coordinating across CAPMC, DSS, and Camerena Health so guests do not have to navigate it alone.",
   },
   {
     title: "Working Men's Ministry",
     year: "Est. 2021",
     description:
-      "Trade skills training led by Greg Belmontez and Jose Martinez. Participants gain hands-on experience in landscaping, painting, flooring, concrete, carpentry, light electrical, plumbing, and maintenance.",
+      "Greg Belmontez and Jose Martinez run trades training on campus - landscaping, carpentry, plumbing, painting, concrete work. Not classroom instruction. Hands-on work, the kind that builds a resume. Women in the program currently volunteer at the Madera Food Bank.",
   },
   {
     title: "Triage Center - Tiny Homes",
     year: "In Progress",
     description:
-      "Six 2-bedroom tiny homes providing 12 additional rapid-rehousing beds with case management support. Groundbreaking was held December 4, 2023 in partnership with the City of Madera, Madera County, and state organizations.",
+      "Six two-bedroom tiny homes going up on the Mission's campus. Groundbreaking was December 4, 2023. When complete, they add twelve rapid-rehousing beds with case management - a different model than the overnight shelter, built for people who need a bridge to something permanent.",
   },
   {
     title: "Emergency Housing Units",
     year: "Since 2007",
     description:
-      "Four multi-bedroom condo-style homes on campus providing longer-term emergency housing for families and individuals in transition.",
+      "Four multi-bedroom condo-style homes built on campus in 2007. Designed for families and individuals who need more than a night - longer-term emergency placement while they find stable footing.",
   },
   {
     title: "Doors of Hope Ministry",
     year: "Affiliated",
     description:
-      "A parenting and pregnancy support ministry affiliated with the Mission. Learn more at doorsofhope.org.",
+      "An affiliated ministry focused on parenting and pregnancy support for families in Madera County. Runs independently at doorsofhope.org, rooted in the same community.",
   },
   {
     title: "Additional Support",
     year: "Ongoing",
     description:
-      "Family reunification ministry, Christian counseling, Helping Hands Ministry for those challenged with finances or work, and volunteer and probation fulfillment opportunities.",
+      "Family reunification ministry, Christian counseling, the Helping Hands Ministry for people facing financial hardship, and volunteer and probation fulfillment opportunities for those looking to give back.",
   },
 ];
 
@@ -105,7 +105,7 @@ export default function ServicesPage() {
         <div className="max-w-4xl mx-auto px-4">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">Our Programs and Services</h1>
           <p className="text-blue-200 text-lg max-w-2xl mx-auto">
-            Emergency shelter is just the beginning. The Madera Rescue Mission walks alongside every guest toward lasting transformation.
+            The Mission has served Madera County since 1987. Emergency shelter is the front door. The programs behind it go much deeper.
           </p>
         </div>
       </section>
@@ -194,7 +194,7 @@ export default function ServicesPage() {
         <div className="max-w-4xl mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold mb-4">Need Help?</h2>
           <p className="text-blue-200 text-lg mb-8">
-            If you or someone you know is in need of shelter or services, contact us today. Walk-ins are welcome.
+            If you or someone you know needs shelter, call or walk in. The Mission is open. No referral needed for overnight emergency shelter.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a

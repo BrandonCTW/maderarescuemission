@@ -8,37 +8,37 @@ const prayerItems = [
   {
     title: "For Our Guests",
     description:
-      "Pray for the men, women, and families staying at the Mission - that they would find not just shelter, but hope, healing, and a path toward lasting change.",
+      "Pray for the men and women sleeping at 1305 Clinton Street tonight. Not just for a safe bed, but for what comes next - the courage to stay, the willingness to try the program, the open door waiting on the other side.",
   },
   {
     title: "For the Discipleship Program",
     description:
-      "Pray for those enrolled in the 9-12 month recovery program - that they would persevere, grow in faith, and graduate into stable, transformed lives.",
+      "Nine to twelve months is a long time to rebuild a life. Pray for those enrolled - that they make it through the hard middle, grow in faith, and finish well. The Belmontez family has walked this road with residents for more than fifteen years.",
   },
   {
     title: "For Staff and Volunteers",
     description:
-      "Pray for Jesse, Greg, Lynda, and the entire team - for wisdom, endurance, and grace as they serve daily on the front lines of homelessness and recovery.",
+      "Jesse Chavez, Greg and Lynda Belmontez, and thirteen other staff members run this place every day. Pray for endurance and clarity - the kind of staying power that keeps people in this work for a decade and beyond.",
   },
   {
     title: "For the Triage Center",
     description:
-      "Pray for the six tiny homes project - that construction would be completed and that this new rapid-rehousing resource would serve many families well.",
+      "Six tiny homes, one groundbreaking in December 2023. Pray for the construction to move forward, for the city and county partnerships to hold, and for the families who will one day call those units a bridge to something permanent.",
   },
   {
     title: "For Community Partnerships",
     description:
-      "Pray for the Mission's relationships with Madera County, Behavioral Health, churches, and civic organizations - that these partnerships would grow stronger.",
+      "The Mission works alongside nineteen organizations - Madera Behavioral Health, CAPMC, Kaiser Permanente, Madera Police, local churches. Pray those relationships stay strong. They are what makes holistic care possible at this scale.",
   },
   {
     title: "For Financial Provision",
     description:
-      "Pray that the Lord would provide for every need - staffing, supplies, facility maintenance, and the resources needed to expand capacity.",
+      "Revenue reached $1.4 million in 2024 - a 16 percent increase over 2023. Pray for continued provision as capacity grows, as the Triage Center comes online, and as the Mission adds staff to serve 147 beds.",
   },
   {
     title: "For the City of Madera",
     description:
-      "Pray for Madera County - that homelessness would decrease, that the community would come together around those in need, and that the Mission's work would bear lasting fruit.",
+      "The Mission is not separate from Madera - it is part of it. Pray that the number of people sleeping outside goes down. And that when someone in Madera County hits their lowest point, they know where to go.",
   },
 ];
 
@@ -50,7 +50,7 @@ export default function PrayPage() {
         <div className="max-w-4xl mx-auto px-4">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">Pray With Us</h1>
           <p className="text-blue-200 text-lg max-w-2xl mx-auto">
-            Prayer is the foundation of everything we do at the Madera Rescue Mission. Your intercession makes a difference.
+            The Mission has been standing on prayer since 1987. If you want to support the work without writing a check, this is where to start.
           </p>
         </div>
       </section>
@@ -97,7 +97,7 @@ export default function PrayPage() {
         <div className="max-w-2xl mx-auto px-4">
           <h2 className="text-2xl font-bold mb-3">Share a Prayer Request</h2>
           <p className="text-blue-200 mb-6">
-            Would you like the Mission to pray for you or someone you know? Reach out - we would be honored.
+            If you would like the Mission to pray for you or someone you know, reach out. They mean it.
           </p>
           <a
             href="tel:5596758321"

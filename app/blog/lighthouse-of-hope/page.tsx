@@ -7,9 +7,39 @@ export const metadata = {
     "On January 5, 1987, Jesse Chavez opened a small soup kitchen with a big vision. Thirty-eight years later, the Mission is stronger than ever.",
 };
 
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "NewsArticle",
+  headline: "A Lighthouse of Hope - 38 Years of Serving Madera County",
+  description:
+    "On January 5, 1987, Jesse Chavez opened a small soup kitchen with a big vision. Thirty-eight years later, the Mission is stronger than ever.",
+  image: "https://maderarescuemission.org/assets/gallery/blog_pexels_lighthouse.jpg",
+  datePublished: "2025-01-05",
+  dateModified: "2025-01-05",
+  author: {
+    "@type": "Organization",
+    name: "Madera Rescue Mission",
+    url: "https://maderarescuemission.org",
+  },
+  publisher: {
+    "@type": "Organization",
+    name: "Madera Rescue Mission",
+    logo: {
+      "@type": "ImageObject",
+      url: "https://maderarescuemission.org/assets/logos/MRM-logo.png",
+    },
+  },
+  url: "https://maderarescuemission.org/blog/lighthouse-of-hope",
+  mainEntityOfPage: "https://maderarescuemission.org/blog/lighthouse-of-hope",
+};
+
 export default function LighthousePost() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <section style={{ backgroundColor: "#2E3192" }} className="py-12 text-white text-center">
         <div className="max-w-4xl mx-auto px-4">
           <span className="text-xs bg-red-800 text-white px-2 py-1 rounded mb-4 inline-block">Mission Story</span>
@@ -32,16 +62,16 @@ export default function LighthousePost() {
           </div>
 
           <p className="text-gray-600 text-base leading-relaxed mb-6">
-            On January 5, 1987, Jesse Chavez opened a small soup kitchen with a big vision: to serve the least, the last, and the lost with radical hospitality. Thirty-eight years later, the Mission continues that calling at a scale none could have imagined at the beginning.
+            January 5, 1987. Jesse Chavez opened a soup kitchen in Madera with enough conviction to feed a few dozen people and enough stubbornness to believe it wouldn&apos;t stop there.
           </p>
           <p className="text-gray-600 text-base leading-relaxed mb-6">
-            What started as a humble meal service has grown into a 147-bed campus at 1305 Clinton Street, Madera - offering emergency overnight shelter, 9-12 month discipleship programs, behavioral health housing in partnership with Madera County, vocational training, and comprehensive case management.
+            It didn&apos;t. By 1990 the Mission had grown into a full emergency shelter. That first year it served 19,500 meals and provided 12,775 bed stays - numbers that were remarkable for a community-run operation that had started with donated groceries and borrowed tables.
           </p>
           <p className="text-gray-600 text-base leading-relaxed mb-6">
-            In its inaugural year as a full shelter (1990), the Mission served 19,500 meals and provided 12,775 bed stays. Today, the Mission serves up to 147 guests every night with a team of 15 staff members and a growing network of community partners.
+            Thirty-eight years later the Mission operates a 147-bed campus at 1305 Clinton Street. The count includes 66 men&apos;s overnight beds, 28 women&apos;s beds, behavioral health housing in partnership with Madera County, a 9-12 month discipleship recovery program, vocational training through the Working Men&apos;s Ministry, and a tiny homes rapid-rehousing project underway since December 2023.
           </p>
           <p className="text-gray-600 text-base leading-relaxed mb-6">
-            The lighthouse has always been the Mission&apos;s symbol - a beacon of hope in the dark for those who have lost their way. That imagery is as true today as it was in 1987.
+            The lighthouse has always been the Mission&apos;s symbol. What makes it apt isn&apos;t just that lighthouses guide ships home - it&apos;s that they operate in the dark, without applause, night after night. The Mission has done that work for 38 years.
           </p>
 
           <blockquote className="border-l-4 pl-6 italic text-gray-700 my-8" style={{ borderColor: "#2E3192" }}>

@@ -12,9 +12,9 @@ const updates = [
     badge: "Active",
     image: "/assets/gallery/gallery_14_20230925_094647.jpg",
     content: [
-      "The Mission's 9-12 month Discipleship Recovery Program continues to transform lives for both men and women.",
-      "Led by Greg and Lynda Belmontez - both with over 15 years at the Mission - the program combines biblical teaching, weekly church attendance (Wednesdays and Sundays), assigned responsibilities, structured free time, and mentorship from pastors and professionals.",
-      "Graduates have the option to remain on campus in transitional housing for up to 6 additional months while securing stable employment and independent living arrangements.",
+      "The 9-12 month Discipleship Recovery Program at the Mission doesn't work like a class you attend and leave. Participants live on campus, keep a schedule, attend church twice a week on Wednesdays and Sundays, and take on assigned responsibilities. The structure is intentional - recovery needs routine, and the Mission provides it.",
+      "Greg and Lynda Belmontez lead the program with over 15 years each at the Mission. They bring in volunteer pastors and professionals for teaching and mentorship. The curriculum is Bible-centered, but the formation is practical - how to hold a job, keep commitments, and live alongside other people.",
+      "Graduates can stay on campus for up to 6 additional months in transitional housing, using that window to secure employment and independent living before moving on.",
     ],
   },
   {
@@ -22,9 +22,9 @@ const updates = [
     badge: "Active",
     image: "/assets/gallery/gallery_05_20231005_183711.jpg",
     content: [
-      "In partnership with Behavioral Health County of Madera, the Mission provides specialized residential housing for clients experiencing both mental health challenges and homelessness.",
-      "The program houses up to 23 men and 11 women in the behavioral health wing. Case managers Travis Shreck and June Gabbard provide weekly individual case management for every client.",
-      "Activities, games, and community engagement opportunities are woven into daily life, helping clients build connection and routine alongside their treatment.",
+      "The Behavioral Health Partnership with Madera County fills a specific gap - housing for people whose mental health challenges and homelessness are intertwined. The Mission provides the physical space; the county partnership provides clinical infrastructure.",
+      "Up to 23 men and 11 women live in the behavioral health wing. Case managers Travis Shreck and June Gabbard meet with each client weekly. That's not a group session - it's an individual meeting, every week, for every person in the program.",
+      "Activities and community engagement are built into the daily structure. Isolation is a real barrier to recovery. The Mission pushes against it.",
     ],
   },
   {
@@ -32,9 +32,9 @@ const updates = [
     badge: "Est. 2022",
     image: "/assets/gallery/gallery_13_20231010_101444.jpg",
     content: [
-      "Launched in 2022, the Connection Ministry has become an essential bridge between Mission guests and the broader network of county resources.",
-      "Staff assist guests with vital documents, legal paperwork, identification, and personal needs. The ministry coordinates directly with CAPMC, Behavioral Health, and the Department of Social Services.",
-      "Connection Ministry staff also coordinate mobile medical services through Camerena Health and DSS, and manage HMIS data entry for county-wide tracking of guests served.",
+      "Since 2022, the Connection Ministry has worked alongside every guest to tackle the paperwork and system navigation that emergency shelter doesn't cover - vital documents, legal paperwork, identification, benefits. The things that need handling before any path to stability is possible.",
+      "Staff coordinate directly with CAPMC, Behavioral Health, and the Department of Social Services. Mobile medical services from Camerena Health come to the campus on Clinton Street - no transit barrier for guests who need care. HMIS data entry keeps the county's picture of homelessness current.",
+      "The Ministry doesn't announce big wins. It handles the gap between a guest's first night and whatever comes next, one document at a time.",
     ],
   },
   {
@@ -42,9 +42,9 @@ const updates = [
     badge: "Est. 2021",
     image: "/assets/gallery/gallery_17_20230927_084816.jpg",
     content: [
-      "Since 2021, the Working Men's Ministry has equipped men at the Mission with real trade skills and employment readiness.",
-      "Led by Greg Belmontez and Jose Martinez, participants receive hands-on training in landscaping, painting, flooring, concrete work, carpentry, light electrical, plumbing, and facility maintenance.",
-      "The training includes tool use, safety procedures, basic mathematics, and workplace communication - building a foundation for sustainable employment. Women at the Mission currently volunteer at the Madera Food Bank.",
+      "Since 2021, the Working Men's Ministry has given men at the Mission something concrete to build toward. Trade skills - landscaping, painting, flooring, concrete, carpentry, light electrical, plumbing, facility maintenance - alongside tool safety, math, and workplace communication.",
+      "Greg Belmontez and Jose Martinez run the training. Both know what it takes to show up to a job site credibly, and that's what the Ministry aims for - men who leave with real skills and real hours in real trades.",
+      "Women currently volunteer at the Madera Food Bank, building routine and community alongside their time at the Mission. The goal is expanding vocational training to include women.",
     ],
   },
   {
@@ -52,9 +52,9 @@ const updates = [
     badge: "In Progress",
     image: "/assets/gallery/gallery_04_20231204_145727.jpg",
     content: [
-      "On December 4, 2023, the Mission broke ground on its most ambitious housing initiative - the Triage Center, a rapid-rehousing campus consisting of six 2-bedroom tiny homes.",
-      "The project is a joint effort with the City of Madera, Madera County, and state organizations. When complete, the Triage Center will provide 12 additional beds for individuals and families needing low-barrier housing with case management support.",
-      "This initiative represents the Mission's expanding vision - from emergency shelter to permanent supportive housing pathways for Madera County's most vulnerable residents.",
+      "On December 4, 2023, the Mission broke ground on the Triage Center - six 2-bedroom tiny homes for rapid rehousing with case management support. The project is joint with the City of Madera, Madera County, and state organizations.",
+      "When complete, the Triage Center will add 12 beds to the campus. The difference from emergency shelter isn't just the number - it's the purpose. These homes are designed to move people through to permanent housing, not just hold them overnight.",
+      "This is the Mission's most ambitious step toward a housing continuum - from the first night at the shelter to a front door of their own.",
     ],
   },
 ];

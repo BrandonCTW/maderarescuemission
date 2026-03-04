@@ -7,27 +7,27 @@ export const metadata = {
 const beliefs = [
   {
     title: "The Bible",
-    text: "We believe the Bible is the inspired, infallible, and authoritative Word of God. It is the foundation for all of our ministry and the guide for daily life.",
+    text: "The Bible is the inspired, infallible Word of God. Every program at the Mission - emergency shelter, discipleship, vocational training - is built on that foundation.",
   },
   {
     title: "The Gospel of Jesus Christ",
-    text: "We believe the Gospel of Jesus Christ is the foundation of all ministry at the Mission. Jesus Christ is Lord and Savior - his death, burial, and resurrection are the basis for our hope and the source of lasting transformation for our guests.",
+    text: "Jesus Christ is Lord and Savior. His death, burial, and resurrection are the basis for real hope - not wishful thinking - and the source of lasting change for the men and women who come through these doors.",
   },
   {
     title: "Faith-Based Ministry",
-    text: "All programs at the Madera Rescue Mission are rooted in biblical principles. Guests of all faiths and backgrounds are welcome. Participation in spiritual programming is voluntary.",
+    text: "Every program here is rooted in Scripture. Guests of all faiths are welcome. Chapel and discipleship programming is available and voluntary - no one is required to participate to receive shelter.",
   },
   {
     title: "Radical Hospitality",
-    text: "We believe that every person - regardless of background, addiction, mental health, or past - bears the image of God and deserves to be treated with dignity, compassion, and care. This is the heart of our 'radical hospitality.'",
+    text: "Every person who walks through the Mission's doors - regardless of addiction, mental illness, or past - bears the image of God. That belief shows up in how staff greet guests, how meals are served, and why the lights stay on at 2am.",
   },
   {
     title: "Holistic Transformation",
-    text: "We believe that lasting change goes beyond physical shelter. True restoration addresses the spiritual, relational, vocational, and social dimensions of a person's life - which is why our programs integrate faith, community, and practical skills.",
+    text: "A warm bed solves one night. The 9-12 month discipleship program addresses what actually keeps people homeless - broken relationships, addiction, lack of job skills, spiritual rootlessness. The Mission takes on all of it.",
   },
   {
     title: "Community and the Church",
-    text: "We believe the local church is a vital partner in serving the poor and vulnerable. The Mission works closely with pastors, churches, and the broader Madera Christian community to extend the reach and depth of our care.",
+    text: "The Mission does not operate alone. Congregations including Madera Avenue Bible Church, Fourth Street Church, Valley Harvest Church, and the Madera Ministerial Association show up consistently - with volunteers, resources, and prayer.",
   },
 ];
 
@@ -39,7 +39,7 @@ export default function DoctrinePage() {
         <div className="max-w-4xl mx-auto px-4">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">Our Doctrine and Beliefs</h1>
           <p className="text-blue-200 text-lg max-w-2xl mx-auto">
-            The Madera Rescue Mission is a Christ-centered nonprofit. The Gospel of Jesus Christ is the foundation of everything we do.
+            The Mission has operated on the same convictions since 1987. The Gospel is not a program add-on. It is the reason the doors stay open.
           </p>
         </div>
       </section>
@@ -76,7 +76,7 @@ export default function DoctrinePage() {
         <div className="max-w-3xl mx-auto px-4">
           <h2 className="text-2xl font-bold mb-4">All Are Welcome</h2>
           <p className="text-blue-200 text-lg leading-relaxed">
-            While the Madera Rescue Mission is a Christ-centered organization, all guests are welcome regardless of faith background. Our doors are open to the least, the last, and the lost - period.
+            The Mission is Christ-centered. And the doors are open to everyone - no faith background required, no spiritual test at intake. The least, the last, and the lost. Period.
           </p>
         </div>
       </section>

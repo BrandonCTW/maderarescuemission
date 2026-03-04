@@ -36,7 +36,7 @@ export default function DonorsPage() {
         <div className="max-w-4xl mx-auto px-4">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">Our Donors</h1>
           <p className="text-blue-200 text-lg max-w-2xl mx-auto">
-            The Mission is deeply grateful to the individuals, businesses, and organizations who make our work possible through their generous support.
+            Every bed at the Mission - all 147 of them - is funded by people and organizations who believe Madera's most vulnerable neighbors deserve more than a sidewalk.
           </p>
         </div>
       </section>
@@ -47,7 +47,7 @@ export default function DonorsPage() {
           <div className="text-center mb-12">
             <h2 className="text-2xl font-bold mb-4" style={{ color: "#2E3192" }}>Thank You to Our Organizational Supporters</h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
-              These organizations have partnered with the Mission through financial contributions that sustain emergency shelter, discipleship programs, and services for Madera County's most vulnerable residents.
+              These organizations gave money so that beds stay open, meals keep coming, and staff show up. In 2024 the Mission served its community on $1.4 million in revenue. None of it arrives automatically.
             </p>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
@@ -72,7 +72,7 @@ export default function DonorsPage() {
         <div className="max-w-2xl mx-auto px-4">
           <h2 className="text-2xl font-bold mb-3" style={{ color: "#2E3192" }}>Join Our Donors</h2>
           <p className="text-gray-600 mb-6">
-            Your organization or business can make a lasting difference in the lives of our neighbors in need. Contact us to learn about partnership opportunities.
+            Your business or organization can be on this list. Donate online, or reach out directly to talk about what a partnership looks like.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
