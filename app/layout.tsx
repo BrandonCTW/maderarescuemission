@@ -21,6 +21,7 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://maderarescuemission.org"),
+  verification: { google: "FKqA1EL1Wh-x6u8yiVyYfZrBXJ--y3BL73ya8jn4tW8" },
   title: "Madera Rescue Mission - Serving the Least, the Last, and the Lost",
   description:
     "Madera Rescue Mission is a faith-based nonprofit in Madera, CA serving the homeless community since 1987. Emergency shelter, discipleship programs, behavioral health housing, case management, and job training for up to 147 guests nightly.",
